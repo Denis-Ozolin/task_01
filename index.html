@@ -4,10 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Radency task-1</title>
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <main>
+    <div class="notes-table">
+      <ul class="title-list">
+        <li class="title-list__item">Created</li>
+        <li class="title-list__item">Category</li>
+        <li class="title-list__item">Content</li>
+        <li class="title-list__item">Dates</li>
+      </ul>
+      <ul class="notes-list">
+        <li class="notes-list__item">
+          <ul class="note">
+            <li class="note__content">date</li>
+            <li class="note__content">categoryttttttttttt tttttttttttttttttttttttt</li>
+            <li class="note__content">text</li>
+            <li class="note__content">
+              <div class="controls">
+                <button class="button button--edit">Edit</button>
+                <button class="button button--delete">Delete</button>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="notes-list__item">
+          <ul class="note">
+            <li class="note__content">date</li>
+            <li class="note__content">categoryyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
+            <li class="note__content">text</li>
+            <li class="note__content">88888 888888 8888888 666666</li>
+            <li class="note__content">
+              <div class="controls">
+                <button class="button button--edit">Edit</button>
+                <button class="button button--delete">Delete</button>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button class="button button--create">Create</button>
+    </div>
+  </main>
   <script src="./js/test.js" type="module"></script>
 </body>
 </html>
