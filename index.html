@@ -16,38 +16,26 @@
         <li class="title-list__item">Content</li>
         <li class="title-list__item">Dates</li>
       </ul>
-      <ul class="notes-list">
-        <li class="notes-list__item">
-          <ul class="note">
-            <li class="note__content">date</li>
-            <li class="note__content">categoryttttttttttt tttttttttttttttttttttttt</li>
-            <li class="note__content">text</li>
-            <li class="note__content">
-              <div class="controls">
-                <button class="button button--edit">Edit</button>
-                <button class="button button--delete">Delete</button>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="notes-list__item">
-          <ul class="note">
-            <li class="note__content">date</li>
-            <li class="note__content">categoryyyyyyyyyyyyyyyyyyyyyyyyyyy</li>
-            <li class="note__content">text</li>
-            <li class="note__content">88888 888888 8888888 666666</li>
-            <li class="note__content">
-              <div class="controls">
-                <button class="button button--edit">Edit</button>
-                <button class="button button--delete">Delete</button>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <ul class="notes-list"></ul>
       <button class="button button--create">Create</button>
     </div>
   </main>
-  <script src="./js/test.js" type="module"></script>
+    <div class="modal__backdrop modal__backdrop--hidden">
+      <div class="modal">
+        <form class="form">     
+          <label for="note" class="form__label">Input new note.</label>
+          <textarea id="note" class="form__textarea" name="content" required></textarea>
+          <select class="form__select" required>
+              <option value="" selected disabled hidden>Choose category</option>
+              <option value="task" class="from__select-option">Task</option>
+              <option value="randomThought">Random Thought</option>
+              <option value="idea">Idea</option>
+          </select>
+          <button type="submit" class="form__submit-btn">Add</button>
+        </form>
+        <button class="modal__close-btn">Close</button>
+      </div>
+  </div>
+  <script src="./js/main.js" type="module"></script>
 </body>
 </html>
