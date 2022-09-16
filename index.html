@@ -19,6 +19,29 @@
       <ul class="notes-list"></ul>
       <button class="button button--create">Create</button>
     </div>
+    <div class="statistics-table">
+      <ul class="title-list">
+        <li class="title-list__item">Note Category</li>
+        <li class="title-list__item">Active</li>
+        <li class="title-list__item">Archived</li>
+      </ul>
+      <ul class="statistics-list">
+        <!-- <li class="notes-list__item">
+          <ul class="note">
+            <li class="note__content">Ctegory</li>
+            <li class="note__content">10</li>
+            <li class="note__content">5</li>
+          </ul>
+        </li>
+        <li class="notes-list__item">
+          <ul class="note">
+            <li class="note__content">Ctegory</li>
+            <li class="note__content">10</li>
+            <li class="note__content">5</li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
   </main>
     <div class="modal__backdrop modal__backdrop--hidden">
       <div class="modal">
@@ -27,9 +50,9 @@
           <textarea id="note" class="form__textarea" name="content" required></textarea>
           <select class="form__select" required>
               <option value="" selected disabled hidden>Choose category</option>
-              <option value="task" class="from__select-option">Task</option>
-              <option value="randomThought">Random Thought</option>
-              <option value="idea">Idea</option>
+              <!-- <option>Task</option>
+              <option>Random Thought</option>
+              <option>Idea</option> -->
           </select>
           <button type="submit" class="form__submit-btn">Add</button>
         </form>
