@@ -62,7 +62,7 @@ li {
 
 .notes-table,
 .statistics-table {
-  width: 1000px;
+  width: 1080px;
   padding: 30px;
   border: 1px solid #000;
   border-radius: 3px;
@@ -76,9 +76,16 @@ li {
 }
 
 .title-list__item {
-  width: 153px;
+  width: 172px;
   font-size: 20px;
   font-weight: 500;
+}
+
+.notes-table .title-list__item:last-child{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .statistics-table .title-list__item:first-child,
@@ -115,7 +122,7 @@ li {
 }
 
 .note__content {
-  width: 153px;
+  width: 172px;
   overflow: hidden;
   white-space: nowrap;
   font-size: 18px;
@@ -123,13 +130,13 @@ li {
 
 .note__content:last-child{
   margin-left: auto;
+  width: 146px;
 }
 
 .controls{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100px;
   margin-left: auto;
 }
 
@@ -139,7 +146,7 @@ li {
   padding: 4px 6px;
   border: 1px solid #000;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
 }
 
