@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Radency task-1</title>
+</head>
+<body>
+  <main>
+    <div class="notes-table">
+      <ul class="title-list">
+        <li class="title-list__item">Created</li>
+        <li class="title-list__item">Category</li>
+        <li class="title-list__item">Content</li>
+        <li class="title-list__item">Dates</li>
+        <li class="title-list__item">
+          <button class="button" type="button">Open Archive</button>
+        </li>
+      </ul>
+      <ul class="notes-list"></ul>
+      <button class="button button--create">Create</button>
+    </div>
+    <div class="statistics-table">
+      <ul class="title-list">
+        <li class="title-list__item">Note Category</li>
+        <li class="title-list__item">Active</li>
+        <li class="title-list__item">Archived</li>
+      </ul>
+      <ul class="statistics-list"></ul>
+    </div>
+  </main>
+    <div class="modal__backdrop modal__backdrop--hidden">
+      <div class="modal">
+        <form class="form">     
+          <label for="note" class="form__label">Input new note.</label>
+          <textarea id="note" class="form__textarea" name="content" required></textarea>
+          <select class="form__select" required></select>
+          <button type="submit" class="form__submit-btn add-note-js">Add</button>
+          <button type="button" class="form__submit-btn save-note-js visualy-hidden">Save change</button>
+        </form>
+        <button class="modal__close-btn">Close</button>
+      </div>
+  </div>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
