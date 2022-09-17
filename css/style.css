@@ -32,7 +32,8 @@ li {
   z-index: 100;
 }
 
-.modal__backdrop--hidden {
+.modal__backdrop--hidden,
+.visualy-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

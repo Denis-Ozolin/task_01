@@ -7,7 +7,8 @@ const refs = {
   createNoteBtn: document.querySelector('.button--create'),
   input: document.querySelector('.form__textarea'),
   select: document.querySelector('.form__select'),
-  addNoteBtn: document.querySelector('.form__submit-btn'),
+  addNoteBtn: document.querySelector('.add-note-js'),
+  saveNoteChange: document.querySelector('.save-note-js'),
 };
 
 export default refs;
